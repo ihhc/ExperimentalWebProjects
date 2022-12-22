@@ -16,7 +16,9 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "TestDb",
-        "TEST_COLLECTION_NAME": "TestCollection"
+        "TEST_COLLECTION_NAME": "TestCollection",
+        "CONNECTION_STRING": "mongodb://localhost:27017/TestDB"
+        //dotnet user-secrets set "CONNECTION_STRING" "mongodb://localhost:27017/TestDB"-p DocumentsWebApi      
       }
     },
     "Documents.WebApi": {
@@ -27,7 +29,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "TestDb",
-        "TEST_COLLECTION_NAME": "TestCollection"
+        "TEST_COLLECTION_NAME": "TestCollection",
+        "CONNECTION_STRING": "mongodb://localhost:27017/TestDB"
       }
     }
   }

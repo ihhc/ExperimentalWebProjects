@@ -26,21 +26,21 @@ namespace DocumentsWebApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddBook(Document document)
+        public IActionResult AddDocument(Document document)
         {
             _documentServices.AddDocument(document);
             return CreatedAtRoute("GetDocument", new { id = document.Id }, document);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteBook(string id)
+        public IActionResult DeleteDocument(string id)
         {
             _documentServices.DeleteDocument(id);
             return NoContent();
         }
 
         [HttpPut]
-        public IActionResult UpdateBook(Document document)
+        public IActionResult UpdateDocument(Document document)
         {
             return Ok(_documentServices.UpdateDocument(document));
         }
