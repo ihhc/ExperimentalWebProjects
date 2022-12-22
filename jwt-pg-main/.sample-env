@@ -1,4 +1,0 @@
-ACCESS_TOKEN_SECRET = 
-REFRESH_TOKEN_SECRET = 
-URL = "http://localhost:5500"
-COOKIE_DOMAIN = localhost
