@@ -28,6 +28,7 @@ namespace DocumentsWebApi.Controllers
         [HttpPost]
         public IActionResult AddDocument(Document document)
         {
+
             _documentServices.AddDocument(document);
             return CreatedAtRoute("GetDocument", new { id = document.Id }, document);
         }
